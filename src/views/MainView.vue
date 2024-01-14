@@ -6,10 +6,12 @@
       </li>
     </ol>
     <div v-if="dataDetail">
-      {{ dataDetail }}
+      <!-- {{ dataDetail }} -->
       <h1>{{ dataDetail.title }}</h1>
       <p>Job Description: </p>
       <!-- <div v-bind="dataDetail.description.txt"></div> -->
+      <!-- {{ dataDetail.description.txt }} -->
+      <div v-html="dataDetail.description.txt"></div>
     </div>
   </div>
 </template>
